@@ -1,0 +1,186 @@
+:root {
+    --white: hwb(210 96% 3%);
+    --yellow: #e4eb0c;
+    --green: #88e015;
+    --gray: #6284d8;
+    --gray2: #96a2e2;
+    --dark: #000;
+    --blue: #1931ab;
+}
+
+body {
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    margin: 0;
+    /* Remova a propriedade overflow: hidden; para permitir a rolagem */
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+.message-row {
+    display: flex;
+    justify-content: flex-start; /* Ajustado para alinhar à esquerda */
+    margin: 5px 0;
+    background-color: var(--blue); /* Cor de fundo para mensagens do usuário */
+}
+
+
+/* Estilos para as mensagens do usuário */
+.user-message-row {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 0;
+}
+
+.user-message-sender {
+    width: 30%;
+    text-align: left;
+}
+
+.user-message {
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    margin: 0 10px 5px 0;
+    text-align: left;
+    align-self: flex-start;
+}
+
+/* Estilos para as mensagens do chatbot */
+.bot-message-row {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 0;
+}
+
+.bot-message-sender {
+    width: 30%;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: var(--green);
+    color: var(--dark);
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    margin: 0 0 5px 10px;
+    text-align: left;
+    align-self: flex-end;
+}
+
+.back-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/static/Group\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bot-tutorial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+.components{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+.guru-div{
+display: flex;
+padding: auto;
+}
+.box-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: auto;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+.bot-tutorial {
+    border-radius: 10px 10px 0 0;
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--green);
+    border-radius: 0 0 10px 10px;
+    padding: 1rem;
+}
+.topo-chat{
+    border-radius: 10px 10px 0 0;
+    background-color: var(--green);
+    padding: auto;
+    height: auto;
+    width: 100%;
+}
+input {
+    width: 50%;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#btn-submit {
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    padding: 10px;
+}
+
+#btn-submit:hover {
+    background-color: var(--gray);
+    cursor: pointer;
+    transition: 0.4s;
+}
+

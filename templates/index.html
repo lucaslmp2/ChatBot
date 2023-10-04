@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru do Brasileirão</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <div class="back-img"></div>
+    <div class="bot-tutorial">
+        <h2 class="tutorial-titulo">Instruções do ChatBot: Guru do Brasileirão</h2>
+    </div>
+    <div class="box-question">
+        <div class="topo-chat">
+            <h2>Guru do Brasileirão</h2>
+        </div>
+        <div class="message-container">
+            <table>
+                <tbody id="message-table">
+                    <tr class="user-message-row"> <!-- Classe para as mensagens do usuário -->
+                        <!-- Classe para o remetente da mensagem do usuário -->
+                         <!-- Classe para a mensagem do usuário -->
+                    </tr>
+                    <tr class="bot-message-row"> <!-- Classe para as mensagens do chatbot -->
+                        <td class="bot-message">Oi, eu sou o Guru do Campeonato Brasileiro. Digite de acordo o menu inicial o que quer saber: <br><br> -História do Campeonato <br> -Jogadores <br> -Campeões <br> -Curiosidades</td> <!-- Classe para o remetente da mensagem do chatbot -->
+                         <!-- Classe para a mensagem do chatbot -->
+                    </tr>
+                    <!-- Outras mensagens aqui -->
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">
+            <input type="text" id="user-input" placeholder="Digite sua pergunta...">
+            <button id="btn-submit">Enviar</button>
+        </div>
+    </div> 
+    <div class="components">
+        <h2 class="title-components">WEB / TID2 / I.A.</h2>
+        <p>Filipe</p>
+        <p>Hanns</p>
+        <p>Lucas</p>
+        <p>Breno</p>
+        <div class="guru-div">
+            <img class="guru" src="/static/Frame 2.png" alt="imagem.png" >
+        </div>
+    </div>
+</body>
+</html>

@@ -1,49 +1,121 @@
+<!-- Declaração do tipo de documento e especificação do idioma -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Meta tags definindo o conjunto de caracteres e a escala inicial da viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/Design sem nome.png" type="image/x-icon">
+    <!-- Título da página exibido na barra de título do navegador -->
     <title>Guru do Brasileirão</title>
+    <!-- Inclusão de um arquivo CSS externo -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Inclusão de um arquivo JavaScript externo -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </head>
 <body>
+    <!-- Div para a imagem de fundo -->
     <div class="back-img"></div>
+    <!-- Div para informações e instruções do chatbot -->
     <div class="bot-tutorial">
-        <h2 class="tutorial-titulo">Instruções do ChatBot: Guru do Brasileirão</h2>
+        <h1>Guru</h1>
+        <h6 id="manual">Manual do ChatBot - Guru do Campeonato Brasileiro
+            <br>
+            <p>Bem-vindo ao Guru do Campeonato Brasileiro! Sou seu assistente virtual e estou aqui para fornecer informações sobre o Campeonato Brasileiro de Futebol. Por favor, siga as instruções abaixo para obter as informações desejadas:</p> 
+            <br>
+            <br>
+            Digite o texto da opção desejada na caixa de texto e pressione "Enter" ou clique no botão "Enviar".
+            <br>
+            Ao final de cada interação, você pode digitar "voltar" para retornar ao menu principal.
+            <br><br>
+            Para voltar ao Início, sempre digite:
+            "Voltar"
+            <br><br>
+            Deseja realizar uma nova busca? Digite: "História do Campeonato", "Títulos", "Clubes", "Jogadores", "Maior Campeão", "Maiores Artilheiros", "Campeões", "Curiosidades", "História do Clube desejado", "Técnico do Clube desejado" ou "voltar"!!!
+            <br><br>
+            Obrigado por usar o Guru do Campeonato Brasileiro. Divirta-se explorando o mundo do futebol!
+            <br>
+        </h6>
+        
+        <div id="manual">
+            <button onclick="toggleManual()">Abrir/Fechar Instruções</button>
+        </div>
+
+    <div><h1>separador</h1></div>
     </div>
     <div class="box-question">
+        <!-- Cabeçalho do chatbot -->
         <div class="topo-chat">
             <h2>Guru do Brasileirão</h2>
         </div>
+        <!-- Container para as mensagens do chatbot -->
         <div class="message-container">
             <table>
                 <tbody id="message-table">
-                    <tr class="user-message-row"> <!-- Classe para as mensagens do usuário -->
-                        <!-- Classe para o remetente da mensagem do usuário -->
-                         <!-- Classe para a mensagem do usuário -->
+                    <!-- Linha para as mensagens do usuário -->
+                    <tr class="user-message-row">
+                        <!-- Coluna para o remetente da mensagem do usuário -->
+                        <!-- Coluna para a mensagem do usuário -->
                     </tr>
-                    <tr class="bot-message-row"> <!-- Classe para as mensagens do chatbot -->
-                        <td class="bot-message">Oi, eu sou o Guru do Campeonato Brasileiro. Digite de acordo o menu inicial o que quer saber: <br><br> -História do Campeonato <br> -Jogadores <br> -Campeões <br> -Curiosidades</td> <!-- Classe para o remetente da mensagem do chatbot -->
-                         <!-- Classe para a mensagem do chatbot -->
+                    <!-- Linha para as mensagens do chatbot -->
+                    <tr class="bot-message-row">
+                        <!-- Coluna para a mensagem do chatbot -->
+                        <td class="bot-message">
+                            Oi, eu sou o Guru do Campeonato Brasileiro. Digite de acordo o menu inicial o que quer saber:
+                            <br><br>
+                            - História do Campeonato
+                            <br>
+                            <br>
+                            - Jogadores
+                            <br><br>
+                            - Títulos
+                            <br><br>
+                            - Maior Campeão
+                            <br><br>
+                            - Maiores Artilheiros
+                            <br><br>
+                            - Campeões
+                            <br><br>
+                            - Curiosidades
+                            <br><br>
+                            - Clubes
+                            <br><br>
+                            - História do [Clube desejado]!
+                            <br><br>
+                            - Técnico do [Clube desejado]!
+                            <br>
+                        </td>
                     </tr>
-                    <!-- Outras mensagens aqui -->
+                    <!-- Outras mensagens podem ser adicionadas aqui -->
                 </tbody>
             </table>
         </div>
+        <!-- Rodapé do chatbot com campo de entrada de texto e botão de envio -->
         <div class="footer">
             <input type="text" id="user-input" placeholder="Digite sua pergunta...">
             <button id="btn-submit">Enviar</button>
         </div>
-    </div> 
+    </div>
+    <!-- Div para informações sobre os desenvolvedores -->
     <div class="components">
-        <h2 class="title-components">WEB / TID2 / I.A.</h2>
-        <p>Filipe</p>
-        <p>Hanns</p>
-        <p>Lucas</p>
-        <p>Breno</p>
+        <div><h1>separador</h1></div>
+        <h2 id="manual2">
+            WEB / TID2 / I.A.
+            <br>
+            <br>
+            Componentes do Projeto:
+            <br>
+            <br>
+            Hanns Nascimento
+            <br>
+            Lucas Moreira Pachêco
+            <br>
+            Filipe Alves Ferreira Rocha
+            <br>
+            Breno Santiago
+        </h2>
         <div class="guru-div">
-            <img class="guru" src="/static/Frame 2.png" alt="imagem.png" >
+            <img class="guru" src="/static/Frame 2.png" alt="imagem.png">
         </div>
     </div>
 </body>
